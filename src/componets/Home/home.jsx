@@ -25,12 +25,12 @@ const Home = () => {
                 imagePath=""
             />
             <Row
-                titleText="Baked Goods"
+                titleText="Sweets"
                 paragraphText="Lorem ipsum dolor simat"
                 imagePath=""
             />
             <Row
-                titleText="Lunch Delights"
+                titleText="Eats"
                 paragraphText="Yum yum yum I love lunch"
                 imagePath=""
             />
@@ -45,6 +45,12 @@ const Home = () => {
                 <li>Monday</li>
                 <li>Monday</li>
                 <li>Monday</li>
+            </ul>
+        </div>
+
+        <div className="location">
+            <ul>
+                <li></li>
             </ul>
         </div>
 

@@ -11,19 +11,22 @@ import{
 
 //Page Imports
 import Home from './componets/Home';
-import Menu from './componets/Menu';
-import About from './componets/About';
-import Error from './componets/Error';
-import Navbar from './componets/Narbar';
+import Navbar from './componets/Header/Navbar';
+import CoffeeBase from './componets/Coffee/coffee';
+import AboutBase from './componets/About/about';
+import SweetsBase from './componets/Sweets/sweets';
+import EatsBase from './componets/Eats/eats';
 
 function App() {
   return (
+    
     <main>
       <Switch>
         <Route path="/" component={Home} exact/>
-        <Route path="/about" component={About}/>
-        <Route path="/menu" component={Menu}/>
-        <Route component={Error}/>
+        <Route path="/about" component={AboutBase}/>
+        <Route path="/coffee" component={CoffeeBase}/>
+        <Route path="/sweets" component={SweetsBase}/>
+        <Route path="/eats" component={EatsBase}/>
       </Switch>
     </main>
   )
@@ -38,7 +41,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-//reportWebVitals();
+
