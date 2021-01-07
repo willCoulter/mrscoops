@@ -4,7 +4,7 @@ import Navitem from "./Navitem/Navitem";
 class Header extends React.Component {
     render(){
         return (
-            <header>
+            <header className="header">
                 <div className="title">
                     <h1>Mr.Scoops</h1>
                 </div>
@@ -22,3 +22,5 @@ class Header extends React.Component {
         );
     }
 }
+
+export default Header;

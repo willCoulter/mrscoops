@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './styles/main.scss'
 import{
   BrowserRouter as Router,
   Switch,
@@ -10,17 +11,17 @@ import{
 } from "react-router-dom"
 
 //Page Imports
-import Home from './componets/Home';
-import Navbar from './componets/Header/Navbar';
+import Home from './componets/Home/home';
+import Header from './componets/Header/Navbar';
 import CoffeeBase from './componets/Coffee/coffee';
 import AboutBase from './componets/About/about';
 import SweetsBase from './componets/Sweets/sweets';
 import EatsBase from './componets/Eats/eats';
 
 function App() {
-  return (
-    
+  return (  
     <main>
+      <Header />
       <Switch>
         <Route path="/" component={Home} exact/>
         <Route path="/about" component={AboutBase}/>

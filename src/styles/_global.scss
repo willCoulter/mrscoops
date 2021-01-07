@@ -1,0 +1,37 @@
+//Basic Colors
+
+$primaryColor: rgb(20, 146, 123);
+$primaryColorLight: lighten($primaryColor, 10);
+$primaryColorDarken: darken($primaryColor, 10);
+$textColor: black;
+
+// Fonts
+
+//Font Sizes
+$largeFontSize: 3em;
+$medFontSize: 1.5em;
+$paragraphFontSize: 1em;
+
+//Media Query Vars
+
+$widthMobile: 480px;
+$widthTablet: 720px;
+$widthDesktop: 1024px;
+$widthLarge: 1200px;
+$widthXL: 1400px;
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin center {
+  width: 100%;
+  margin: 2em auto;
+  text-align: center;
+}

@@ -1,8 +1,8 @@
 import React from "react"
-import Row from "/Row"
+import Row from "./Row"
 import {withRouter, useHistory} from 'react-router-dom'
 
-const Home = () => {
+const HomeBase = () => {
     const history = useHistory()
 
     return (
@@ -58,3 +58,5 @@ const Home = () => {
 
     )
 }
+
+export default HomeBase
